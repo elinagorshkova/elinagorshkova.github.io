@@ -1,5 +1,7 @@
 'use strict'
 
+let ux = require('./ux/scroll.js')
+
 // use require with a reference to bundle the file and use it in this file
 // const example = require('./example')
 
@@ -7,5 +9,9 @@
 // require('./example')
 
 $(() => {
-  // your JS code goes here
+  $('#button').on('click', ux.scrollAbout)
 })
+
+// const hi = function () {
+//   console.log('hi')
+// }
