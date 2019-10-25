@@ -9,6 +9,7 @@
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "bootstrap": "^4.1.2",
+    "isotope-layout": "^3.0.6",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.3",
     "requirejs": "^2.3.6"

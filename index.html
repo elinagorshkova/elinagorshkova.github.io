@@ -6,12 +6,14 @@
 	<meta name="author" content="ThemeStarz">
 
     <link href="https://fonts.googleapis.com/css?family=Gudea&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="assets/font-awesome/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/odometer-theme-default.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <script src="assets/js/isotope.pkgd.min.js"></script>
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -25,7 +27,8 @@
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/particles.min.js"></script>
     <script src="assets/js/custom.js"></script>
-    <script type="module" src="assets/scripts/app.js"></script>
+    <!-- <script type="module" src="assets/scripts/app.js"></script> -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
 
 	<title>My Site</title>
 
@@ -97,7 +100,7 @@
                     </span>
                 </h1>
 
-                <h4 class="mb-0" data-animate="ts-fadeInUp" data-ts-delay=".1s">software engineer in Boston, Massachusetts</h4>
+                <h4 class="mb-0" data-animate="ts-fadeInUp" data-ts-delay=".1s">Software engineer in Boston, Massachusetts</h4>
 
             </div>
 <!-- Cool background -->
@@ -123,8 +126,18 @@
                 <div class="container">
 
                     <blockquote class="blockquote">
-                        <h2>About me</h2>
-                        <footer class="blockquote-footer">Blah Blah Blah</footer>
+                        <h2>About me:</h2>
+                        <footer class="blockquote-footer">
+                          <h5>
+                          I`m a software engineer with background in finance and enterpreneurship seeking new opportunities in Boston, MA.
+                        </h5>
+                        <h5>
+                          Being a tech-oriented person for as long as I can remember myself, I have always been interested in computers and loved solving problems. While working in the financial industry, I taught myself to code, and I fell in love with it. I decided to switch careers and commit full time to learn Software engineering.
+                        </h5>
+                        <h5>
+                           I'm excited to continue to expand my knowledge of  JavaScript, React, Express, Ruby on Rails, and many other technologies and use them in the corporate environment as a part of a software development team.
+                        </h5>
+                        </footer>
                     </blockquote>
 
                 </div>
@@ -140,17 +153,10 @@
                         <div class="col-md-6">
                             <div class="ts-feature">
                                 <img src="assets/img/icon__dashboard.png" alt="" class="mb-5">
-                                <h4>Less Coding, More Fun</h4>
-                                <p>Pellentesque vitae massa vel neque rhoncus posuere</p>
-                            </div>
-                        </div>
-                        <!--end Feature-->
-
-                        <div class="col-md-6">
-                            <div class="ts-feature">
-                                <img src="assets/img/icon__user.png" alt="" class="mb-5">
-                                <h4>Know Your User</h4>
-                                <p>Donec finibus a quam vel scelerisque. Donec varius</p>
+                                <h2>My projects:</h2>
+                                <br>
+                                <h5>I enjoy building rich full-stack web applications, designing scalable back-end infrastructures, and utilizing the most relevant technologies to produce high-quality code.
+                                </h5>
                             </div>
                         </div>
                         <!--end Feature-->
@@ -239,7 +245,7 @@
                         <h2>My Skills</h2>
                     </div>
 
-                    <div class="row">
+                    <!-- <div class="row">
                       <i class="fab fa-github col-1">Github</i>
                       <i class="fab fa-aws col-1">AWS</i>
                       <i class="fab fa-bootstrap col-1">Bootstrap</i>
@@ -249,7 +255,193 @@
                       <i class="fab fa-node col-1">Node.js</i>
                       <i class="fab fa-react col-1">React</i>
                       <i class="fab fa-sass col-1">SASS</i>
+                    </div> -->
+                    <section class="portfolio-area section-gap" id="skills">
+				  <div class="container">
+						<div class="row d-flex justify-content-center">
+							<div class="menu-content col-lg-10">
+							</div>
+						</div>
+
+				    <div class="filters">
+				      <ul>
+				        <li class="" data-filter="*">All</li>
+				        <li data-filter=".language" class="active">Languages</li>
+				        <li data-filter=".technology" class="">Technology</li>
+				        <li data-filter=".product" class="">Product Management</li>
+				      </ul>
+				    </div>
+
+				    <div class="filters-content">
+				      <div class="row grid" style="position: relative; height: 153px;">
+				        <div class="single-portfolio col-sm-2 all language" style="position: absolute; left: 0%; top: 0px;">
+				          <div class="item">
+                    <i class="devicon-javascript-plain colored"></i>
+				            <div class="p-inner">
+				              <h4>JavaScript</h4>
+				              <div class="cat">language</div>
+				            </div>
+				          </div>
+				        </div>
+                <div class="single-portfolio col-sm-2 all language" style="position: absolute; left: 16.6667%; top: 0px;">
+                  <div class="item">
+                    <i class="devicon-ruby-plain colored"></i>
+                    <div class="p-inner">
+                      <h5>Ruby</h5>
+                      <div class="cat">language</div>
                     </div>
+                  </div>
+                </div>
+				        <div class="single-portfolio col-sm-2 all language" style="position: absolute; left: 33.3333%; top: 0px;">
+				          <div class="item">
+                    <i class="devicon-html5-plain colored"></i>
+				            <div class="p-inner">
+				              <h4>HTML</h4>
+				              <div class="cat">language</div>
+				            </div>
+				          </div>
+				        </div>
+				        <div class="single-portfolio col-sm-2 all language" style="position: absolute; left: 50%; top: 0px;">
+				          <div class="item">
+                    <i class="devicon-css3-plain colored"></i>
+				            <div class="p-inner">
+				              <h5>CSS</h5>
+				              <div class="cat">language</div>
+				            </div>
+				          </div>
+				        </div>
+                <div class="single-portfolio col-sm-2 all technology" style="position: absolute; left: 0%; top: 0px; display: none;">
+				          <div class="item">
+                    <i class="devicon-react-original colored"></i>
+				            <div class="p-inner">
+				              <h4>React</h4>
+				              <div class="cat">technology</div>
+				            </div>
+				          </div>
+				        </div>
+                <div class="single-portfolio col-sm-2 all technology" style="position: absolute; left: 16.6667%; top: 0px; display: none;">
+                  <div class="item">
+                    <i class="devicon-rails-plain colored"></i>
+                    <div class="p-inner">
+                      <h5>Rails</h5>
+                      <div class="cat">technology</div>
+                    </div>
+                  </div>
+                </div>
+				        <div class="single-portfolio col-sm-2 all technology" style="position: absolute; left: 33.3333%; top: 0px; display: none;">
+				          <div class="item">
+                    <i class="devicon-git-plain colored"></i>
+				            <div class="p-inner">
+				              <h4>Git</h4>
+				              <div class="cat">technology</div>
+				            </div>
+				          </div>
+				        </div>
+				        <div class="single-portfolio col-sm-2 all technology" style="position: absolute; left: 50%; top: 0px; display: none;">
+				          <div class="item">
+                    <i class="devicon-github-plain colored"></i>
+				            <div class="p-inner">
+				              <h4>Github</h4>
+				              <div class="cat">technology</div>
+				            </div>
+				          </div>
+				        </div>
+                <div class="single-portfolio col-sm-2 all technology" style="position: absolute; left: 66.6667%; top: 0px; display: none;">
+				          <div class="item">
+                    <i class="devicon-jquery-plain colored"></i>
+				            <div class="p-inner">
+				              <h5>jQuery</h5>
+				              <div class="cat">technology</div>
+				            </div>
+				          </div>
+				        </div>
+                <div class="single-portfolio col-sm-2 all technology" style="position: absolute; left: 83.3333%; top: 0px; display: none;">
+				          <div class="item">
+                    <i class="devicon-bootstrap-plain colored"></i>
+				            <div class="p-inner">
+				              <h4>Bootstrap</h4>
+				              <div class="cat">technology</div>
+				            </div>
+				          </div>
+				        </div>
+
+				        <div class="single-portfolio col-sm-2 all technology" style="position: absolute; left: 16.6667%; top: 150px; display: none;">
+				          <div class="item">
+                    <i class="devicon-postgresql-plain colored"></i>
+				            <div class="p-inner">
+				              <h5>PostgreSQL</h5>
+				              <div class="cat">technology</div>
+				            </div>
+				          </div>
+				        </div>
+                <div class="single-portfolio col-sm-2 all technology" style="position: absolute; left: 66.6667%; top: 150px; display: none;">
+				          <div class="item">
+                    <i class="devicon-mongodb-plain colored"></i>
+				            <div class="p-inner">
+				              <h5>MongoDB</h5>
+				              <div class="cat">technology</div>
+				            </div>
+				          </div>
+				        </div>
+                <div class="single-portfolio col-sm-2 all product" style="position: absolute; left: 83.3333%; top: 300px; display: none;">
+                 <div class="item">
+                   <img class="logo" viewbox="0 0 128 128" src="img/logos/jira-logo.png" alt="Work 1">
+                   <div class="p-inner">
+                     <h5>Jira</h5>
+                     <div class="cat">product</div>
+                   </div>
+                 </div>
+                </div>
+                <div class="single-portfolio col-sm-2 all technology" style="position: absolute; left: 0%; top: 153px; display: none;">
+				          <div class="item">
+                    <i class="devicon-nodejs-plain colored"></i>
+				            <div class="p-inner">
+				              <h5>Node.js</h5>
+				              <div class="cat">technology</div>
+				            </div>
+				          </div>
+				        </div>
+                <div class="single-portfolio col-sm-2 all technology" style="position: absolute; left: 33.3333%; top: 153px; display: none;">
+				          <div class="item">
+                    <i class="devicon-amazonwebservices-original colored"></i>
+				            <div class="p-inner">
+				              <h5>Amazon Web Services</h5>
+				              <div class="cat">technology</div>
+				            </div>
+				          </div>
+				        </div>
+                <div class="single-portfolio col-sm-2 all technology" style="position: absolute; left: 50%; top: 153px; display: none;">
+                 <div class="item">
+                   <i class="devicon-heroku-original colored"></i>
+                   <div class="p-inner">
+                     <h5>Heroku</h5>
+                     <div class="cat">technology</div>
+                   </div>
+                 </div>
+               </div>
+                <div class="single-portfolio col-sm-2 all product" style="position: absolute; left: 66.6667%; top: 303px; display: none;">
+                 <div class="item">
+                   <i class="devicon-trello-plain colored"></i>
+                   <div class="p-inner">
+                     <h5>Trello</h5>
+                     <div class="cat">product</div>
+                   </div>
+                 </div>
+               </div>
+               <div class="single-portfolio col-sm-2 all technology" style="position: absolute; left: 83.3333%; top: 153px; display: none;">
+                 <div class="item">
+                   <i class="devicon-express-original colored"></i>
+                   <div class="p-inner">
+                     <h5>Express</h5>
+                     <div class="cat">technology</div>
+                   </div>
+                 </div>
+               </div>
+				      </div>
+				    </div>
+
+				  </div>
+				</section>
                     <!--end .row-->
                 </div>
                 <!--end .container-->

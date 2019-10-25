@@ -1379,9 +1379,6 @@ blockquote h2 {
     margin-bottom: 2rem;
 }
 
-.blockquote-footer {
-    opacity: .6;
-}
 
 .blockquote-footer:before {
     display: none;
