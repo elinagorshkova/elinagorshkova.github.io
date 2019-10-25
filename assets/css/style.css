@@ -1,88 +1,9 @@
-/*----------------------------------------------------------------------------------------------------------------------
-Project:	    Preus
-Version:        1.0.0
-
-Default Color   #000;
-Background Color  #fff;
-
-Body copy:		'Poppins', sans-serif; 16px;
-Headers:		'Poppins', sans-serif;
-
-----------------------------------------------------------------------------------------------------------------------*/
-
-/*----------------------------------------------------------------------------------------------------------------------
-[Table of contents]
-
-A. Basic Styling
-  -- Styling
-
-B. Helpers
-  -- animations
-  -- align
-  -- borders
-  -- colors
-  -- column-count
-  -- background
-  -- height
-  -- margin
-  -- list
-  -- no-gutters
-  -- opacity
-  -- overflow
-  -- padding
-  -- position
-  -- shadow
-  -- typography
-  -- title
-  -- transitions
-  -- utilities
-  -- video-bg
-  -- width
-  -- z-index
-
-C. Components
-  -- block
-  -- blockquote
-  -- blog
-  -- box
-  -- buttons
-  -- card
-  -- circle
-  -- description-list
-  -- forms
-  -- footer
-  -- gallery
-  -- hr
-  -- inputs
-  -- item
-  -- list
-  -- loading-screen
-  -- map
-  -- member
-  -- hero
-  -- navbar
-  -- page
-  -- partners
-
-D. Plugins Styles
-  -- Magnific Popup
-  -- Owl Carousel
-
-E. Template Specific Elements
-  -- Other
-
-
-----------------------------------------------------------------------------------------------------------------------*/
-
-/***********************************************************************************************************************
-A. Basic Styling
-***********************************************************************************************************************/
-@import "template-specific/_styling.pcss";
+/* @import "template-specific/_styling.pcss"; */
 
 /***********************************************************************************************************************
 B. Helpers
 ***********************************************************************************************************************/
-@import "helpers/_animations.pcss";
+/* @import "helpers/_animations.pcss";
 @import "helpers/_align.pcss";
 @import "helpers/_borders.pcss";
 @import "helpers/_colors.pcss";
@@ -103,12 +24,12 @@ B. Helpers
 @import "helpers/_utilities.pcss";
 @import "helpers/_video-bg.pcss";
 @import "helpers/_width.pcss";
-@import "helpers/_z-index.pcss";
+@import "helpers/_z-index.pcss"; */
 
 /***********************************************************************************************************************
 C. Components
 ***********************************************************************************************************************/
-@import "components/_block.pcss";
+/* @import "components/_block.pcss";
 @import "components/_blockquote.pcss";
 @import "components/_blog.pcss";
 @import "components/_box.pcss";
@@ -128,24 +49,23 @@ C. Components
 @import "components/_hero.pcss";
 @import "components/_navbar.pcss";
 @import "components/_page.pcss";
-@import "components/_partners.pcss";
 @import "components/_progress.pcss";
 @import "components/_promo-numbers.pcss";
-@import "components/_slider.pcss";
+@import "components/_slider.pcss"; */
 
 /***********************************************************************************************************************
 D. Plugins Styles
 ***********************************************************************************************************************/
-@import "plugins/_magnific-popup.pcss";
-@import "plugins/_owl-carousel.pcss";
+/* @import "plugins/_magnific-popup.pcss";
+@import "plugins/_owl-carousel.pcss"; */
 
 /***********************************************************************************************************************
 E. Template Specific Elements
 ***********************************************************************************************************************/
-@import "template-specific/_other.pcss";
+/* @import "template-specific/_other.pcss"; */
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Gudea', sans-serif;
     font-size: 1rem;
     margin: 0;
     padding: 0;
@@ -1249,7 +1169,7 @@ p {
     content: "";
     height: 100%;
     left: 0;
-    opacity: .7;
+    opacity: .5;
     position: absolute;
     top: 0;
     width: 100%;
@@ -2143,34 +2063,34 @@ form label, .ts-form label {
     padding-bottom: .5rem;
 }
 
-#ts-footer {
+#main-footer {
     background-color: #000;
     color: #fff;
 }
 
-#ts-footer #ts-footer-main {
+#main-footer #main-footer-main {
     border-bottom: .0625rem solid rgba(255, 255, 255, .3);
     padding-bottom: 6rem;
     padding-top: 6rem;
 }
 
 @media (min-width: 48rem) {
-    #ts-footer #ts-footer-main {
+    #main-footer #main-footer-main {
         padding-bottom: 8rem;
         padding-top: 8rem;
     }
 }
 
-#ts-footer a {
+#main-footer a {
     color: #fff;
 }
 
-#ts-footer nav .nav-link {
+#main-footer nav .nav-link {
     text-decoration: underline;
     padding-left: 0;
 }
 
-#ts-footer nav .nav-link:first-child {
+#main-footer nav .nav-link:first-child {
     padding-top: 0;
 }
 
@@ -2504,7 +2424,7 @@ body.has-loading-screen.loading-done #brand-navigation {
     justify-content: center;
     width: 100%;
     height: 100%;
-    background-color: #1f1f1f;
+    background-color: #010101;
     border-right: .0625rem solid rgba(255, 255, 255, .2);
     font-size: 1.5rem;
     font-weight: 600;
@@ -2715,15 +2635,6 @@ body.nav-hovered #main-navigation .navbar-toggler {
     .ts-content {
         margin-top: 4.5rem;
     }
-}
-
-/*-------------------------------------------
-  -- Partners
--------------------------------------------*/
-
-.ts-partners a {
-    display: block;
-    padding: .625rem .3125rem;
 }
 
 /*-------------------------------------------
@@ -3178,6 +3089,6 @@ h1 a.ts-underline {
     }
 
     body.nav-hovered #main-navigation .navbar {
-        width: 25rem;
+        width: 15rem;
     }
 }

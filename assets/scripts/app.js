@@ -7,5 +7,52 @@
 // require('./example')
 
 $(() => {
-  // your JS code goes here
+  $('#about-ref').on('click', scrollAbout)
+  $('#portfolio-ref').on('click', scrollPortfolio)
+  $('#skills-ref').on('click', scrollSkills)
+  $('#contact-ref').on('click', scrollContact)
+  $('#resume-ref').on('click', scrollResume)
 })
+
+const scrollAbout = function () {
+  $('body,html').animate(
+    {
+      scrollTop: $('#blockquote').offset().top
+    },
+    800
+  )
+}
+
+const scrollPortfolio = function () {
+  $('body,html').animate(
+    {
+      scrollTop: $('#works').offset().top
+    },
+    800
+  )
+}
+
+const scrollSkills = function () {
+  $('body,html').animate(
+    {
+      scrollTop: $('#my-skills').offset().top
+    },
+    800
+  )
+}
+const scrollContact = function () {
+  $('body,html').animate(
+    {
+      scrollTop: $('#main-footer').offset().top
+    },
+    800
+  )
+}
+const scrollResume = function () {
+  $('body,html').animate(
+    {
+      scrollTop: $('#resume').offset().top
+    },
+    800
+  )
+}

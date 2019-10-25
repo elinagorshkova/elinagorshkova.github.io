@@ -5,12 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="author" content="ThemeStarz">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,600">
+    <link href="https://fonts.googleapis.com/css?family=Gudea&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="assets/font-awesome/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/odometer-theme-default.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isInViewport.jquery.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/scrolla.jquery.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/jquery-validate.bootstrap-tooltip.min.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/particles.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script type="module" src="assets/scripts/app.js"></script>
 
 	<title>My Site</title>
 
@@ -26,144 +41,40 @@
     <div id="main-navigation">
         <nav class="navbar navbar-dark">
             <ul class="navbar-nav">
-
-                <!--Home
+                <!--About me
                 ========================================================================================================
                 -->
                 <li class="nav-item">
-                    <a class="nav-link active" href="#collapse__home" data-toggle="collapse" role="button">Home</a>
-                    <!-- <div class="collapse" id="collapse__home">
-                        <ul class="nav flex-column">
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Creative</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="index__app.html">App</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="index__freelancer.html">Freelancer</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="index__portfolio.html">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="index__slider.html">Slider</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="index__video.html">Video</a>
-                            </li>
-
-                        </ul>
-                    </div> -->
-                </li>
-
-                <!--About us
-                ========================================================================================================
-                -->
-                <li class="nav-item">
-                    <a class="nav-link" href="#collapse__about" data-toggle="collapse" role="button">About</a>
-                    <!-- <div class="collapse" id="collapse__about">
-                        <ul class="nav flex-column">
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="about__default.html">Default</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about__freelancer.html">Freelancer</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about__minimal.html">Minimal</a>
-                            </li>
-
-                        </ul>
-                    </div> -->
+                    <a class="nav-link" href="#collapse__about" role="button" id="about-ref">About</a>
                 </li>
 
                 <!--Portfolio
                 ========================================================================================================
                 -->
                 <li class="nav-item">
-                    <a class="nav-link" href="#collapse-portfolio" data-toggle="collapse" role="button">Portfolio</a>
-                    <!-- <div class="collapse" id="collapse-portfolio"> -->
-                        <!-- <ul class="nav flex-column"> -->
+                    <a class="nav-link" href="#collapse-portfolio" role="button" id="portfolio-ref">Project</a>
+                </li>
 
-                            <!--Single-->
-
-                            <!-- <li class="nav-item">
-                                <a class="nav-link" href="#collapse__portfolio--detail" data-toggle="collapse" role="button">Detail</a>
-                                <div class="collapse" id="collapse__portfolio--detail">
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="portfolio__detail--default.html">Default</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="portfolio__detail--slider.html">Slider</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="portfolio__detail--minimal.html">Minimal</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="portfolio__detail--case-study.html">Case Study</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="portfolio__detail--vertical.html">Vertical</a>
-                                        </li>
-                                    </ul> -->
-                                <!-- </div> -->
-                            </li>
-
-                            <!--Columns-->
-
-                            <!--Masonry-->
-
-                            <!-- <li class="nav-item">
-                                <a class="nav-link" href="portfolio__masonry.html">Masonry</a>
-                            </li>
-
-                        </ul>
-                    </div>
-                </li> -->
-
-                <!--Blog
+                <!--Skills
                 ========================================================================================================
                 -->
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="#collapse__blog" data-toggle="collapse" role="button">Blog</a>
-                    <div class="collapse" id="collapse__blog">
-                        <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapse__blog" role="button" id="skills-ref">Skills</a>
+                </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link active" href="blog__list.html">Listing</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="blog__detail.html">Post Detail</a>
-                            </li>
-
-                        </ul>
-                    </div>
-                </li> -->
+                <!--Resume
+                ========================================================================================================
+                -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapse__contact" role="button" id="resume-ref">Resume</a>
+                </li>
 
                 <!--Contact
                 ========================================================================================================
                 -->
                 <li class="nav-item">
-                    <a class="nav-link" href="#collapse__contact" data-toggle="collapse" role="button">Contact</a>
-                    <!-- <div class="collapse" id="collapse__contact">
-                        <ul class="nav flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact__default.html">Default</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact__left-map.html">Left Map</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact__minimal.html">Minimal</a>
-                            </li>
-                        </ul>
-                    </div> -->
+                    <a class="nav-link" href="#collapse__contact" role="button" id="contact-ref">Contact</a>
                 </li>
-
             </ul>
         </nav>
     </div>
@@ -186,16 +97,16 @@
                     </span>
                 </h1>
 
-                <h4 class="mb-0" data-animate="ts-fadeInUp" data-ts-delay=".1s">A software engineer based in Boston</h4>
+                <h4 class="mb-0" data-animate="ts-fadeInUp" data-ts-delay=".1s">software engineer in Boston, Massachusetts</h4>
 
             </div>
 <!-- Cool background -->
-            <!-- <div class="ts-background" data-bg-parallax="scroll" data-bg-parallax-speed="3">
+            <div class="ts-background" data-bg-parallax="scroll" data-bg-parallax-speed="3">
                 <div id="ts-particles" class="ts-background-image ts-parallax-element ts-z-index__1"></div>
                 <div class="ts-img-into-bg ts-background-image ts-parallax-element">
-                    <img src="assets/img/bg-office.jpg" alt="">
+                    <img src="assets/img/bg-4.jpeg" alt="warm sunrise">
                 </div>
-            </div> -->
+            </div>
 
         </header>
 
@@ -219,7 +130,43 @@
                 </div>
             </section>
 
-            <!--Works
+            <!--Features
+            ============================================================================================================
+            -->
+            <section id="features" class="ts-block text-white text-center text-sm-left">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="ts-feature">
+                                <img src="assets/img/icon__dashboard.png" alt="" class="mb-5">
+                                <h4>Less Coding, More Fun</h4>
+                                <p>Pellentesque vitae massa vel neque rhoncus posuere</p>
+                            </div>
+                        </div>
+                        <!--end Feature-->
+
+                        <div class="col-md-6">
+                            <div class="ts-feature">
+                                <img src="assets/img/icon__user.png" alt="" class="mb-5">
+                                <h4>Know Your User</h4>
+                                <p>Donec finibus a quam vel scelerisque. Donec varius</p>
+                            </div>
+                        </div>
+                        <!--end Feature-->
+
+                    </div>
+                </div>
+
+                <div class="ts-background" data-bg-parallax="scroll" data-bg-parallax-speed="3">
+                    <div class="ts-background-image ts-parallax-element ts-z-index__1"></div>
+                    <div class="ts-img-into-bg ts-background-image ts-parallax-element ts-has-overlay">
+                        <img src="assets/img/bg-gradient.png" alt="warm sunrise">
+                    </div>
+                </div>
+            </section>
+
+            <!--Projects
             ============================================================================================================
             -->
             <section id="works">
@@ -227,152 +174,60 @@
 
                     <div class="row no-gutters ts-gallery">
 
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-md-6">
                             <a href="assets/img/img__work__thumb--01.jpg" class="card ts-gallery__item ts-floated-description popup-image" data-animate="ts-fadeInUp">
                                 <div class="ts-gallery__item-description">
-                                    <h5>Tic Tac Toe</h5>
-                                    <h3>Blah Blah Blah</h3>
+                                    <h3>Paper Trade</h3>
+                                    <h5>stock market trading simulator</h5>
                                 </div>
-                                <!-- <div class="ts-background ts-img-into-bg">
-                                    <img src="assets/img/img__work__thumb--01.jpg" alt="">
-                                </div> -->
+                                <div class="ts-background ts-img-into-bg">
+                                    <img src="assets/img/stonks.png" alt="">
+                                </div>
                             </a>
                         </div>
                         <!--end gallery item-->
 
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-md-6">
                             <a href="assets/img/img__work__thumb--02.jpg" class="card ts-gallery__item ts-floated-description popup-image" data-animate="ts-fadeInUp" data-delay=".1s">
                                 <div class="ts-gallery__item-description">
-                                    <h5>Sampler</h5>
-                                    <h3>Blah Blah Blah</h3>
+                                    <h3>uDJ</h3>
+                                    <h5>DJ audio sampler/drum machine</h5>
                                 </div>
-                                <!-- <div class="ts-background ts-img-into-bg">
-                                    <img src="assets/img/img__work__thumb--02.jpg" alt="">
-                                </div> -->
+                                <div class="ts-background ts-img-into-bg">
+                                    <img src="assets/img/sampler.png" alt="">
+                                </div>
                             </a>
                         </div>
                         <!--end gallery item-->
 
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-md-6">
                             <a href="assets/img/img__work__thumb--03.jpg" class="card ts-gallery__item ts-floated-description popup-image" data-animate="ts-fadeInUp" data-delay=".15s">
                                 <div class="ts-gallery__item-description">
-                                    <h5>Group Project</h5>
-                                    <h3>Blah Blah Blah</h3>
+                                    <h3>YOLO bucket</h3>
+                                    <h5>things to experience in life</h5>
                                 </div>
-                                <!-- <div class="ts-background ts-img-into-bg">
-                                    <img src="assets/img/img__work__thumb--03.jpg" alt="">
-                                </div> -->
+                                <div class="ts-background ts-img-into-bg">
+                                    <img src="assets/img/yolo.png" alt="">
+                                </div>
                             </a>
                         </div>
                         <!--end gallery item-->
 
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-md-6">
                             <a href="assets/img/img__work__thumb--04.jpg" class="card ts-gallery__item ts-floated-description popup-image" data-animate="ts-fadeInUp" data-delay=".2s">
                                 <div class="ts-gallery__item-description">
-                                    <h5>Final Project</h5>
-                                    <h3>Yeeeeah!</h3>
-                                </div>
-                                <!-- <div class="ts-background ts-img-into-bg">
-                                    <img src="assets/img/img__work__thumb--04.jpg" alt="">
-                                </div> -->
-                            </a>
-                        </div>
-                        <!--end gallery item-->
-<!--
-                        <div class="col-md-6 col-lg-4">
-                            <a href="assets/img/img__work__thumb--05.jpg" class="card ts-gallery__item ts-floated-description popup-image" data-animate="ts-fadeInUp" data-delay=".25s">
-                                <div class="ts-gallery__item-description">
-                                    <h5>Branding</h5>
-                                    <h3>Maracana Cups</h3>
+                                    <h3>Tic Tac Toe</h3>
+                                    <h5>classic game for two people</h5>
                                 </div>
                                 <div class="ts-background ts-img-into-bg">
-                                    <img src="assets/img/img__work__thumb--05.jpg" alt="">
+                                    <img src="assets/img/ttt.png" alt="">
                                 </div>
                             </a>
                         </div>
                         <!--end gallery item-->
-
-                        <!-- <div class="col-md-6 col-lg-4">
-                            <a href="assets/img/img__work__thumb--06.jpg" class="card ts-gallery__item ts-floated-description popup-image" data-animate="ts-fadeInUp" data-delay=".3s">
-                                <div class="ts-gallery__item-description">
-                                    <h5>Art</h5>
-                                    <h3>Timeless Motion</h3>
-                                </div>
-                                <div class="ts-background ts-img-into-bg">
-                                    <img src="assets/img/img__work__thumb--06.jpg" alt="">
-                                </div>
-                            </a>
-                        </div> -->
-                        <!--end gallery item-->
-
                     </div>
                 </div>
             </section>
-
-            <!--Features
-            ============================================================================================================
-            -->
-            <!-- <section id="features" class="ts-block text-white text-center text-sm-left">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-md-4">
-                            <div class="ts-feature">
-                                <img src="assets/img/icon__dashboard.png" alt="" class="mb-5">
-                                <h4>Less Coding, More Fun</h4>
-                                <p>Pellentesque vitae massa vel neque rhoncus posuere</p>
-                            </div>
-                        </div> -->
-                        <!--end Feature-->
-
-                        <!-- <div class="col-md-4">
-                            <div class="ts-feature">
-                                <img src="assets/img/icon__user.png" alt="" class="mb-5">
-                                <h4>Know Your User</h4>
-                                <p>Donec finibus a quam vel scelerisque. Donec varius</p>
-                            </div>
-                        </div> -->
-                        <!--end Feature-->
-
-                        <!-- <div class="col-md-4">
-                            <div class="ts-feature">
-                                <img src="assets/img/icon__envelope.png" alt="" class="mb-5">
-                                <h4>Target The Audience</h4>
-                                <p> Vestibulum scelerisque quam vitae arcu euismod, sit</p>
-                            </div>
-                        </div> -->
-                        <!--end Feature-->
-
-                    <!-- </div>
-                </div>
-
-                <div class="ts-background ts-bg-black">
-                    <div class="ts-background-image ts-background-repeat ts-opacity__10 ts-img-into-bg">
-                        <img src="assets/img/bg__pattern--topo-white.png" alt="">
-                    </div>
-                </div>
-            </section> -->
-
-            <!--Partners
-            ============================================================================================================
-            -->
-            <!-- <section id="partners" class="py-5" data-bg-color="#fafafa">
-                <div class="container py-5">
-                    <div class="d-block d-md-flex justify-content-around align-items-center text-center ts-partners">
-
-                        <a href="#">
-                            <img src="assets/img/logo-01.png" alt="">
-                        </a>
-                        <a href="#">
-                            <img src="assets/img/logo-02.png" alt="">
-                        </a>
-                        <a href="#">
-                            <img src="assets/img/logo-03.png" alt="">
-                        </a>
-
-                    </div>
-                </div>
-            </section> -->
 
             <!--Skills
             ============================================================================================================
@@ -385,97 +240,29 @@
                     </div>
 
                     <div class="row">
-
-                        <div class="col-md-6 mb-4">
-                            <p>
-                              There will be a bunch of icons
-                            </p>
-                            <!-- <a href="contact__default.html" class="ts-link ts-underline">Contact Us</a> -->
-                        </div>
-                        <!--end Paragraph-->
-
-                        <!-- <div class="col-md-6">
-
-                            <div class="progress" data-progress-width="100%">
-                                <h5 class="ts-progress-title">Webdesign</h5>
-                                <figure class="ts-progress-value"></figure>
-                                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <!--end Skill-->
-
-                            <!-- <div class="progress" data-progress-width="80%">
-                                <h5 class="ts-progress-title">Photography</h5>
-                                <figure class="ts-progress-value"></figure>
-                                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div> -->
-                            <!--end Skill-->
-
-                            <!-- <div class="progress" data-progress-width="90%">
-                                <h5 class="ts-progress-title">Coding</h5>
-                                <figure class="ts-progress-value"></figure>
-                                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div> -->
-                            <!--end Skill-->
-
-                        <!-- </div> -->
+                      <i class="fab fa-github col-1">Github</i>
+                      <i class="fab fa-aws col-1">AWS</i>
+                      <i class="fab fa-bootstrap col-1">Bootstrap</i>
+                      <i class="fab fa-css3-alt col-1">CSS3</i>
+                      <i class="fab fa-html5 col-1">HTML5</i>
+                      <i class="fab fa-js-square col-1">JavaScript</i>
+                      <i class="fab fa-node col-1">Node.js</i>
+                      <i class="fab fa-react col-1">React</i>
+                      <i class="fab fa-sass col-1">SASS</i>
                     </div>
                     <!--end .row-->
                 </div>
                 <!--end .container-->
             </section>
 
-
-            <!--Promo numbers
+            <!--Resume
             ============================================================================================================
             -->
-            <!-- <section class="ts-block ts-background-repeat" data-bg-image="assets/img/bg__pattern--dot.png">
-                <div class="container ts-promo-numbers">
-                    <div class="row">
-
-                        <div class="col-sm-6 col-md-3">
-                            <div class="ts-promo-number text-center">
-                                <figure class="odometer" data-odometer-final="43">0</figure>
-                                <h5>Clients</h5>
-                            </div>
-                        </div> -->
-                        <!--end Promo number-->
-
-                        <!-- <div class="col-sm-6 col-md-3">
-                            <div class="ts-promo-number text-center">
-                                <figure class="odometer" data-odometer-final="68">0</figure>
-                                <h5>Projects</h5>
-                            </div>
-                        </div> -->
-                        <!--end Promo number-->
-
-                        <!-- <div class="col-sm-6 col-md-3">
-                            <div class="ts-promo-number text-center">
-                                <figure class="odometer" data-odometer-final="17">0</figure>
-                                <h5>Awards</h5>
-                            </div>
-                        </div> -->
-                        <!--end Promo number-->
-
-                        <!-- <div class="col-sm-6 col-md-3">
-                            <div class="ts-promo-number text-center">
-                                <figure class="odometer" data-odometer-final="12">0</figure>
-                                <h5>Years Experience</h5>
-                            </div>
-                        </div> -->
-                        <!--end Promo number-->
-<!--
-                    </div>
-                </div>
-            </section> -->
-
-            <!--Our Experience
-            ============================================================================================================
-            -->
-            <!-- <section class="ts-block">
+            <section id="resume" class="ts-block">
                 <div class="container">
 
                     <div class="ts-title">
-                        <h2>Our Experience</h2>
+                        <h2>Resume</h2>
                     </div>
 
                     <div class="row">
@@ -494,9 +281,9 @@
                                         Fusce pretium dui quis est pretium lobortis. Vestibulum eu ex sed nibh
                                         condimentum tristique eu finibus lorem. Nullam sed eleifend massa.
                                     </p>
-                                </li> -->
+                                </li>
                                 <!--end Experience block-->
-<!--
+
                                 <li data-animate="ts-fadeInRight" data-ts-delay=".1s">
                                     <h5 class="opacity-30"><strong>2013 - 2016</strong></h5>
                                     <h4>Weston PhotoDesign</h4>
@@ -504,17 +291,17 @@
                                         Vestibulum eu ex sed nibh condimentum tristique eu finibus lorem. Nullam sed
                                         eleifend massa. Morbi nulla turpis, pharetra
                                     </p>
-                                </li> -->
+                                </li>
                                 <!--end Experience block-->
 
-                                <!-- <li class="mb-0" data-animate="ts-fadeInRight" data-ts-delay=".2s">
+                                <li class="mb-0" data-animate="ts-fadeInRight" data-ts-delay=".2s">
                                     <h5 class="opacity-30"><strong>Until Now</strong></h5>
                                     <h4>Freelance</h4>
                                     <p>
                                         Tristique eu finibus lorem. Nullam sed eleifend massa. Morbi nulla turpis,
                                         pharetra et nisl eu, pellentesque molestie erat
                                     </p>
-                                </li> -->
+                                </li>
                                 <!--end Experience block-->
 
                             </ul>
@@ -531,8 +318,8 @@
         ================================================================================================================
         ================================================================================================================
         -->
-        <footer id="ts-footer">
-            <section id="ts-footer-main">
+        <footer id="main-footer">
+            <section id="main-footer-main">
                 <div class="container">
 
                     <div class="ts-title">
@@ -548,23 +335,17 @@
                             <a href="#" class="ts-link ts-underline mb-5 mb-md-0 d-inline-block"></a>
                         </div>
 
-                        <!-- <div class="col-sm-6 col-md-4">
+                        <div class="col-sm-6 col-md-4">
                             <address class="ts-text-muted---white">
-                                1565 Broadcast Drive
-                                <br>
-                                Dulles, VA 20166
+                                Boston, MA
                                 <br>
                                 <br>
-                                <strong>Tel:</strong> +1 703-996-1212
-                                <br>
-                                <strong>Email:</strong> <a href="#">hello@example.com</a>
-                                <br>
-                                <strong>Skype:</strong> <a href="#">wearepreus</a>
+                                <strong>Email:</strong> <a href="#">contact@elinag.dev</a>
                                 <br>
                             </address>
-                        </div> -->
+                        </div>
 
-                        <!-- <div class="col-sm-6 col-md-3">
+                        <div class="col-sm-6 col-md-3">
                             <nav class="nav flex-column">
                                 <a class="nav-link" href="#">Home</a>
                                 <a class="nav-link" href="#">About us</a>
@@ -572,7 +353,7 @@
                                 <a class="nav-link" href="#">Services</a>
                                 <a class="nav-link" href="#">Contact</a>
                             </nav>
-                        </div> -->
+                        </div>
 
                     </div>
                 </div>
@@ -591,20 +372,6 @@
     <!--end page-->
 
 </div>
-
-	<script src="assets/js/jquery-3.3.1.min.js"></script>
-	<script src="assets/js/popper.min.js"></script>
-	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-	<script src="assets/js/isInViewport.jquery.js"></script>
-	<script src="assets/js/jquery.magnific-popup.min.js"></script>
-	<script src="assets/js/scrolla.jquery.min.js"></script>
-	<script src="assets/js/jquery.validate.min.js"></script>
-	<script src="assets/js/jquery-validate.bootstrap-tooltip.min.js"></script>
-	<script src="assets/js/odometer.min.js"></script>
-	<script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/particles.min.js"></script>
-    <script src="assets/js/custom.js"></script>
 
 </body>
 </html>
