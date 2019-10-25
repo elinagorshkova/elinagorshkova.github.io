@@ -2064,34 +2064,34 @@ form label, .ts-form label {
     padding-bottom: .5rem;
 }
 
-#ts-footer {
+#main-footer {
     background-color: #000;
     color: #fff;
 }
 
-#ts-footer #ts-footer-main {
+#main-footer #main-footer-main {
     border-bottom: .0625rem solid rgba(255, 255, 255, .3);
     padding-bottom: 6rem;
     padding-top: 6rem;
 }
 
 @media (min-width: 48rem) {
-    #ts-footer #ts-footer-main {
+    #main-footer #main-footer-main {
         padding-bottom: 8rem;
         padding-top: 8rem;
     }
 }
 
-#ts-footer a {
+#main-footer a {
     color: #fff;
 }
 
-#ts-footer nav .nav-link {
+#main-footer nav .nav-link {
     text-decoration: underline;
     padding-left: 0;
 }
 
-#ts-footer nav .nav-link:first-child {
+#main-footer nav .nav-link:first-child {
     padding-top: 0;
 }
 

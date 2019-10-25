@@ -1,7 +1,5 @@
 'use strict'
 
-let ux = require('./ux/scroll.js')
-
 // use require with a reference to bundle the file and use it in this file
 // const example = require('./example')
 
@@ -9,9 +7,43 @@ let ux = require('./ux/scroll.js')
 // require('./example')
 
 $(() => {
-  $('#button').on('click', ux.scrollAbout)
+  $('#about-ref').on('click', scrollAbout)
+  $('#portfolio-ref').on('click', scrollPortfolio)
+  $('#skills-ref').on('click', scrollSkills)
+  $('#contact-ref').on('click', scrollContact)
 })
 
-// const hi = function () {
-//   console.log('hi')
-// }
+const scrollAbout = function () {
+  $('body,html').animate(
+    {
+      scrollTop: $('#blockquote').offset().top
+    },
+    800
+  )
+}
+
+const scrollPortfolio = function () {
+  $('body,html').animate(
+    {
+      scrollTop: $('#works').offset().top
+    },
+    800
+  )
+}
+
+const scrollSkills = function () {
+  $('body,html').animate(
+    {
+      scrollTop: $('#my-skills').offset().top
+    },
+    800
+  )
+}
+const scrollContact = function () {
+  $('body,html').animate(
+    {
+      scrollTop: $('#main-footer').offset().top
+    },
+    800
+  )
+}
