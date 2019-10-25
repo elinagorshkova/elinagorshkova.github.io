@@ -11,6 +11,7 @@ $(() => {
   $('#portfolio-ref').on('click', scrollPortfolio)
   $('#skills-ref').on('click', scrollSkills)
   $('#contact-ref').on('click', scrollContact)
+  $('#resume-ref').on('click', scrollResume)
 })
 
 const scrollAbout = function () {
@@ -43,6 +44,14 @@ const scrollContact = function () {
   $('body,html').animate(
     {
       scrollTop: $('#main-footer').offset().top
+    },
+    800
+  )
+}
+const scrollResume = function () {
+  $('body,html').animate(
+    {
+      scrollTop: $('#resume').offset().top
     },
     800
   )

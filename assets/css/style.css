@@ -49,7 +49,6 @@ C. Components
 @import "components/_hero.pcss";
 @import "components/_navbar.pcss";
 @import "components/_page.pcss";
-@import "components/_partners.pcss";
 @import "components/_progress.pcss";
 @import "components/_promo-numbers.pcss";
 @import "components/_slider.pcss"; */
@@ -66,7 +65,7 @@ E. Template Specific Elements
 /* @import "template-specific/_other.pcss"; */
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Gudea', sans-serif;
     font-size: 1rem;
     margin: 0;
     padding: 0;
@@ -1170,7 +1169,7 @@ p {
     content: "";
     height: 100%;
     left: 0;
-    opacity: .7;
+    opacity: .5;
     position: absolute;
     top: 0;
     width: 100%;
@@ -2425,7 +2424,7 @@ body.has-loading-screen.loading-done #brand-navigation {
     justify-content: center;
     width: 100%;
     height: 100%;
-    background-color: #1f1f1f;
+    background-color: #010101;
     border-right: .0625rem solid rgba(255, 255, 255, .2);
     font-size: 1.5rem;
     font-weight: 600;
@@ -2636,15 +2635,6 @@ body.nav-hovered #main-navigation .navbar-toggler {
     .ts-content {
         margin-top: 4.5rem;
     }
-}
-
-/*-------------------------------------------
-  -- Partners
--------------------------------------------*/
-
-.ts-partners a {
-    display: block;
-    padding: .625rem .3125rem;
 }
 
 /*-------------------------------------------
@@ -3099,6 +3089,6 @@ h1 a.ts-underline {
     }
 
     body.nav-hovered #main-navigation .navbar {
-        width: 25rem;
+        width: 15rem;
     }
 }
