@@ -1,4 +1,6 @@
-$(() => {
+!function ($) {
+  'use strict'
+  $(() => {
   $('#about-ref').on('click', scrollAbout)
   $('#portfolio-ref').on('click', scrollPortfolio)
   $('#skills-ref').on('click', scrollSkills)
@@ -78,3 +80,4 @@ if (document.getElementById('skills')) {
     }
   })
 };
+}(window.jQuery)
