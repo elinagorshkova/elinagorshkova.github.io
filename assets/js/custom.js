@@ -172,10 +172,6 @@ $(function() {
         });
     });
 
-    // Owl Carousel
-
-    initOwl();
-
     // Magnific Popup
 
     var $popupImage = $(".popup-image");
