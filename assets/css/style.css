@@ -2832,13 +2832,19 @@ h1 a.ts-underline {
       height:700px;
 } */
 
-.item {
-
+.item i {
+  font-size: 2rem;
 }
 
 .p-inner {
+    padding: 20px 0px;
+  }
 
-}
+
+.item {
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px;
 /*-------------------------------------------
   -- Isotope
 -------------------------------------------*/
