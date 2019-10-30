@@ -193,12 +193,12 @@
                         <!--end gallery item-->
 
                         <div class="col-md-6">
-                            <a href="assets/img/img__work__thumb--02.jpg" class="card ts-gallery__item ts-floated-description popup-image" data-animate="ts-fadeInUp" data-delay=".1s">
+                            <a class="card ts-gallery__item ts-floated-description" data-animate="ts-fadeInUp" data-delay=".1s">
                                 <div class="ts-gallery__item-description">
                                     <h3>uDJ</h3>
                                     <h5>DJ audio sampler/drum machine</h5>
                                 </div>
-                                <div class="ts-background ts-img-into-bg">
+                                <div data-toggle="modal" data-target="#udj-modal" class="ts-background ts-img-into-bg">
                                     <img src="assets/img/sampler.png" alt="">
                                 </div>
                             </a>
@@ -206,12 +206,12 @@
                         <!--end gallery item-->
 
                         <div class="col-md-6">
-                            <a href="assets/img/img__work__thumb--03.jpg" class="card ts-gallery__item ts-floated-description popup-image" data-animate="ts-fadeInUp" data-delay=".15s">
+                            <a class="card ts-gallery__item ts-floated-description" data-animate="ts-fadeInUp" data-delay=".15s">
                                 <div class="ts-gallery__item-description">
                                     <h3>YOLO bucket</h3>
                                     <h5>things to experience in life</h5>
                                 </div>
-                                <div class="ts-background ts-img-into-bg">
+                                <div data-toggle="modal" data-target="#yolo-bucket-modal" class="ts-background ts-img-into-bg">
                                     <img src="assets/img/yolo.png" alt="">
                                 </div>
                             </a>
@@ -219,12 +219,12 @@
                         <!--end gallery item-->
 
                         <div class="col-md-6">
-                            <a href="assets/img/img__work__thumb--04.jpg" class="card ts-gallery__item ts-floated-description popup-image" data-animate="ts-fadeInUp" data-delay=".2s">
+                            <a class="card ts-gallery__item ts-floated-description" data-animate="ts-fadeInUp" data-delay=".2s">
                                 <div class="ts-gallery__item-description">
                                     <h3>Tic Tac Toe</h3>
                                     <h5>classic game for two people</h5>
                                 </div>
-                                <div class="ts-background ts-img-into-bg">
+                                <div data-toggle="modal" data-target="#tic-tac-toe-modal" class="ts-background ts-img-into-bg">
                                     <img src="assets/img/ttt.png" alt="">
                                 </div>
                             </a>
@@ -536,12 +536,6 @@
                     </div>
                 </div>
             </section>
-
-            <section>
-                <div class="container py-5">
-                    <small></small>
-                </div>
-            </section>
         </footer>
         <!--end #footer-->
 
@@ -555,28 +549,149 @@
 ================================================================================================================
 ================================================================================================================
 -->
-<!-- Modal -->
+<!-- Modal Paper Trade -->
 <div class="modal fade" id="paper-trade-modal" tabindex="-1" role="dialog" aria-labelledby="paper-trade-modal" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-    <div class="modal-content .modal-fullscreen">
-      <div class="m-header">
-        <h5 class="m-title">Paper Trade</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class=row>
-        <div class="col-6"> screenshot </div>
-        <div class="col-6"> description </div>
-      </div>
-      </div>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="project-screenshot">
+          <img class="screenshot" src="assets/img/paper-trade.png" alt="paper trade app screenshot">
+        </div>
+        <div class="project-description">
+          <h5>Paper Trade</h5>
+          <p>Paper Trade is an app designed with a goal to give people chance to learn how to trade stocks with zero risk to lose money. In this app you can buy and sell real world stocks with virtual money.</p>
+          <h5>Some technologies used</h5>
+          <div class="project-tech container">
+            <div class="row">
+              <i class="devicon-react-original-wordmark col-4"></i>
+              <i class="devicon-bootstrap-plain-wordmark col-4"></i>
+              <i class="devicon-rails-plain-wordmark col-4"></i>
+          </div>
+        </div>
+        </div>
       <div class="m-footer">
-        github || app
+        <div class="project-links contacts row">
+          <div class="project-link item col-6">
+            <a class="link" href="https://elinagorshkova.github.io/paper-trade-client/#/main" target="_blank">Launch project</a>
+          </div>
+          <div class="project-link item col-6">
+            <a class="link" href="https://github.com/elinagorshkova/paper-trade-client" target="_blank">More on GitHub</a>
+          </div>
+      </div>
       </div>
     </div>
   </div>
 </div>
+<!-- Modal Paper Trade -->
 
+
+<!-- Modal Tic Tac Toe -->
+<div class="modal fade" id="tic-tac-toe-modal" tabindex="-1" role="dialog" aria-labelledby="tic-tac-toe-modal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="project-screenshot">
+          <img class="screenshot" src="assets/img/tic-tac-toe.png" alt="tic tac toe app screenshot">
+        </div>
+        <div class="project-description">
+          <h5>Tic Tac Toe</h5>
+          <p>Classic game for two players.
+            <br />
+            Vanilla JS front end application with a custom game engine. Also stores the user`s game history and returns win/lose statistics. Works with a pre-built RoR API.</p>
+          <h5>Some technologies used</h5>
+          <div class="project-tech container">
+            <div class="row">
+              <i class="devicon-javascript-plain col-4"></i>
+              <i class="devicon-bootstrap-plain-wordmark col-4"></i>
+              <i class="devicon-sass-original col-4"></i>
+          </div>
+        </div>
+        </div>
+      <div class="m-footer">
+        <div class="project-links contacts row">
+          <div class="project-link item col-6">
+            <a class="link" href="https://elinagorshkova.github.io/tic-tac-toe-client/" target="_blank">Launch project</a>
+          </div>
+          <div class="project-link item col-6">
+            <a class="link" href="https://github.com/elinagorshkova/tic-tac-toe-client" target="_blank">More on GitHub</a>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Tic Tac Toe -->
+
+<!-- Modal uDJ -->
+<div class="modal fade" id="udj-modal" tabindex="-1" role="dialog" aria-labelledby="udj-modal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="project-screenshot">
+          <img class="screenshot" src="assets/img/udj.png" alt="u DJ app screenshot">
+        </div>
+        <div class="project-description">
+          <h5>uDJ</h5>
+          <p>
+            Interactive full stack app that allows a user to play music with a custom library of audio samples. User can pick a library of samples and play music by hitting keys on the keyboard.
+          </p>
+          <h5>Some technologies used</h5>
+          <div class="project-tech container">
+            <div class="row">
+              <i class="devicon-rails-plain-wordmark col-4"></i>
+              <i class="devicon-postgresql-plain-wordmark col-4"></i>
+              <i class="devicon-javascript-plain col-4"></i>
+          </div>
+        </div>
+        </div>
+      <div class="m-footer">
+        <div class="project-links contacts row">
+          <div class="project-link item col-6">
+            <a class="link" href="https://elinagorshkova.github.io/sampler-vol-1.0/" target="_blank">Launch project</a>
+          </div>
+          <div class="project-link item col-6">
+            <a class="link" href="https://github.com/elinagorshkova/sampler-vol-1.0" target="_blank">More on GitHub</a>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal uDJ -->
+
+<!-- Modal YOLO bucket -->
+<div class="modal fade" id="yolo-bucket-modal" tabindex="-1" role="dialog" aria-labelledby="yolo-bucket-modal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="project-screenshot">
+          <img class="screenshot" src="assets/img/yolo-bucket.png" alt="YOLO bucket app screenshot">
+        </div>
+        <div class="project-description">
+          <h5>YOLO bucket</h5>
+          <p>
+            Team project.
+            <br />
+            The main goal og the project was to learn how to work in a team of developers. Learned about projec management technologies such as Trello and methhods such as Scrum.
+          </p>
+          <h5>Some technologies used</h5>
+          <div class="project-tech container">
+            <div class="row">
+              <i class="devicon-express-original-wordmark col-4"></i>
+              <i class="devicon-git-plain-wordmark col-4"></i>
+              <i class="devicon-trello-plain-wordmark col-4"></i>
+          </div>
+        </div>
+        </div>
+      <div class="m-footer">
+        <div class="project-links contacts row">
+          <div class="project-link item col-6">
+            <a class="link" href="https://team-elmn.github.io/yolo-client/" target="_blank">Launch project</a>
+          </div>
+          <div class="project-link item col-6">
+            <a class="link" href="https://github.com/Team-ELMN/yolo-client" target="_blank">More on GitHub</a>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal YOLO bucket -->
 </body>
 </html>

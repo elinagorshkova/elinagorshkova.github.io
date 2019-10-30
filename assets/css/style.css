@@ -2963,27 +2963,34 @@ h1 a.ts-underline {
 /*-------------------------------------------
   -- Modal
 -------------------------------------------*/
-.modal-fullscreen{
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  top: 0;
-  left: 0;
-}
 
-.modal-content {
-background-color: #111111;
-color: #fff;
-height: 80vh;
-}
-
-.m-header {
-  margin: 10px;
+.m-content {
   text-align: center;
 }
-
-.m-title {
+.m-footer {
   display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.project-description {
+  padding: 10px;
+}
+.project-links {
+  text-align: center;
+  background-color: #010101;
+  color: white;
+}
+.project-link {
+  display: inline-block;
+}
+.project-tech {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 3rem;
+}
+.screenshot {
+  width: 100%;
 }
 
 /*-------------------------------------------
