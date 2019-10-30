@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="assets/css/odometer-theme-default.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <script src="assets/js/isotope.pkgd.min.js"></script>
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -23,11 +22,11 @@
     <script src="assets/js/scrolla.jquery.min.js"></script>
     <script src="assets/js/jquery.validate.min.js"></script>
     <script src="assets/js/jquery-validate.bootstrap-tooltip.min.js"></script>
-    <script src="assets/js/odometer.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/particles.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
     <script src="assets/js/custom.js"></script>
-    <!-- <script type="module" src="assets/scripts/app.js"></script> -->
     <script type="text/javascript" src="assets/js/main.js"></script>
 
 	<title>My Site</title>
@@ -152,7 +151,7 @@
 
                         <div class="col-md-6">
                             <div class="ts-feature">
-                                <img src="assets/img/icon__dashboard.png" alt="" class="mb-5">
+                                <!-- <img src="assets/img/icon__dashboard.png" alt="" class="mb-5"> -->
                                 <h2>My projects:</h2>
                                 <br>
                                 <h5>I enjoy building rich full-stack web applications, designing scalable back-end infrastructures, and utilizing the most relevant technologies to produce high-quality code.
@@ -181,12 +180,12 @@
                     <div class="row no-gutters ts-gallery">
 
                         <div class="col-md-6">
-                            <a href="assets/img/img__work__thumb--01.jpg" class="card ts-gallery__item ts-floated-description popup-image" data-animate="ts-fadeInUp">
+                            <a class="card ts-gallery__item ts-floated-description" data-animate="ts-fadeInUp">
                                 <div class="ts-gallery__item-description">
                                     <h3>Paper Trade</h3>
                                     <h5>stock market trading simulator</h5>
                                 </div>
-                                <div class="ts-background ts-img-into-bg">
+                                <div data-toggle="modal" data-target="#paper-trade-modal" class="ts-background ts-img-into-bg">
                                     <img src="assets/img/stonks.png" alt="">
                                 </div>
                             </a>
@@ -194,12 +193,12 @@
                         <!--end gallery item-->
 
                         <div class="col-md-6">
-                            <a href="assets/img/img__work__thumb--02.jpg" class="card ts-gallery__item ts-floated-description popup-image" data-animate="ts-fadeInUp" data-delay=".1s">
+                            <a class="card ts-gallery__item ts-floated-description" data-animate="ts-fadeInUp" data-delay=".1s">
                                 <div class="ts-gallery__item-description">
                                     <h3>uDJ</h3>
                                     <h5>DJ audio sampler/drum machine</h5>
                                 </div>
-                                <div class="ts-background ts-img-into-bg">
+                                <div data-toggle="modal" data-target="#udj-modal" class="ts-background ts-img-into-bg">
                                     <img src="assets/img/sampler.png" alt="">
                                 </div>
                             </a>
@@ -207,12 +206,12 @@
                         <!--end gallery item-->
 
                         <div class="col-md-6">
-                            <a href="assets/img/img__work__thumb--03.jpg" class="card ts-gallery__item ts-floated-description popup-image" data-animate="ts-fadeInUp" data-delay=".15s">
+                            <a class="card ts-gallery__item ts-floated-description" data-animate="ts-fadeInUp" data-delay=".15s">
                                 <div class="ts-gallery__item-description">
                                     <h3>YOLO bucket</h3>
                                     <h5>things to experience in life</h5>
                                 </div>
-                                <div class="ts-background ts-img-into-bg">
+                                <div data-toggle="modal" data-target="#yolo-bucket-modal" class="ts-background ts-img-into-bg">
                                     <img src="assets/img/yolo.png" alt="">
                                 </div>
                             </a>
@@ -220,12 +219,12 @@
                         <!--end gallery item-->
 
                         <div class="col-md-6">
-                            <a href="assets/img/img__work__thumb--04.jpg" class="card ts-gallery__item ts-floated-description popup-image" data-animate="ts-fadeInUp" data-delay=".2s">
+                            <a class="card ts-gallery__item ts-floated-description" data-animate="ts-fadeInUp" data-delay=".2s">
                                 <div class="ts-gallery__item-description">
                                     <h3>Tic Tac Toe</h3>
                                     <h5>classic game for two people</h5>
                                 </div>
-                                <div class="ts-background ts-img-into-bg">
+                                <div data-toggle="modal" data-target="#tic-tac-toe-modal" class="ts-background ts-img-into-bg">
                                     <img src="assets/img/ttt.png" alt="">
                                 </div>
                             </a>
@@ -238,270 +237,267 @@
             <!--Skills
             ============================================================================================================
             -->
-            <section id="my-skills" class="ts-block">
-                <div class="container">
 
-                    <div class="ts-title">
-                        <h2>My Skills</h2>
-                    </div>
+      <section class="ts-block" id="my-skills">
+        <div class="container">
+          <div class="ts-title">
+            <h2>My Skills</h2>
+          </div>
 
-                    <!-- <div class="row">
-                      <i class="fab fa-github col-1">Github</i>
-                      <i class="fab fa-aws col-1">AWS</i>
-                      <i class="fab fa-bootstrap col-1">Bootstrap</i>
-                      <i class="fab fa-css3-alt col-1">CSS3</i>
-                      <i class="fab fa-html5 col-1">HTML5</i>
-                      <i class="fab fa-js-square col-1">JavaScript</i>
-                      <i class="fab fa-node col-1">Node.js</i>
-                      <i class="fab fa-react col-1">React</i>
-                      <i class="fab fa-sass col-1">SASS</i>
-                    </div> -->
-                    <section class="portfolio-area section-gap" id="skills">
-				  <div class="container">
-						<div class="row d-flex justify-content-center">
-							<div class="menu-content col-lg-10">
-							</div>
-						</div>
+          <div class="filters">
+            <ul>
+              <li class="" data-filter="*">
+                <a>All</a>
+                </li>
+              <li class="active" data-filter=".language">
+                <a>Languages</a>
+              </li>
+              <li class="" data-filter=".technology">
+                <a>Technologies</a>
+              </li>
+              <li class="" data-filter=".other">
+                <a>Other</a>
+                </li>
+            </ul>
+          </div>
 
-				    <div class="filters">
-				      <ul>
-				        <li class="" data-filter="*">All</li>
-				        <li data-filter=".language" class="active">Languages</li>
-				        <li data-filter=".technology" class="">Technology</li>
-				        <li data-filter=".product" class="">Product Management</li>
-				      </ul>
-				    </div>
-
-				    <div class="filters-content">
-				      <div class="row grid" style="position: relative; height: 153px;">
-				        <div class="single-portfolio col-sm-2 all language" style="position: absolute; left: 0%; top: 0px;">
-				          <div class="item">
-                    <i class="devicon-javascript-plain colored"></i>
-				            <div class="p-inner">
-				              <h4>JavaScript</h4>
-				              <div class="cat">language</div>
-				            </div>
-				          </div>
-				        </div>
-                <div class="single-portfolio col-sm-2 all language" style="position: absolute; left: 16.6667%; top: 0px;">
-                  <div class="item">
-                    <i class="devicon-ruby-plain colored"></i>
-                    <div class="p-inner">
-                      <h5>Ruby</h5>
-                      <div class="cat">language</div>
-                    </div>
+          <div class="filters-content">
+            <div class="row grid">
+              <div class="single-portfolio col-sm-2 all language">
+                <div class="item">
+                  <i class="devicon-javascript-plain colored"></i>
+                  <div class="p-inner">
+                    <a>JavaScript</a>
                   </div>
                 </div>
-				        <div class="single-portfolio col-sm-2 all language" style="position: absolute; left: 33.3333%; top: 0px;">
-				          <div class="item">
-                    <i class="devicon-html5-plain colored"></i>
-				            <div class="p-inner">
-				              <h4>HTML</h4>
-				              <div class="cat">language</div>
-				            </div>
-				          </div>
-				        </div>
-				        <div class="single-portfolio col-sm-2 all language" style="position: absolute; left: 50%; top: 0px;">
-				          <div class="item">
-                    <i class="devicon-css3-plain colored"></i>
-				            <div class="p-inner">
-				              <h5>CSS</h5>
-				              <div class="cat">language</div>
-				            </div>
-				          </div>
-				        </div>
-                <div class="single-portfolio col-sm-2 all technology" style="position: absolute; left: 0%; top: 0px; display: none;">
-				          <div class="item">
-                    <i class="devicon-react-original colored"></i>
-				            <div class="p-inner">
-				              <h4>React</h4>
-				              <div class="cat">technology</div>
-				            </div>
-				          </div>
-				        </div>
-                <div class="single-portfolio col-sm-2 all technology" style="position: absolute; left: 16.6667%; top: 0px; display: none;">
-                  <div class="item">
-                    <i class="devicon-rails-plain colored"></i>
-                    <div class="p-inner">
-                      <h5>Rails</h5>
-                      <div class="cat">technology</div>
-                    </div>
+              </div>
+              <div class="single-portfolio col-sm-2 all language">
+                <div class="item">
+                  <i class="devicon-ruby-plain colored"></i>
+                  <div class="p-inner">
+                    <a>Ruby</a>
                   </div>
                 </div>
-				        <div class="single-portfolio col-sm-2 all technology" style="position: absolute; left: 33.3333%; top: 0px; display: none;">
-				          <div class="item">
-                    <i class="devicon-git-plain colored"></i>
-				            <div class="p-inner">
-				              <h4>Git</h4>
-				              <div class="cat">technology</div>
-				            </div>
-				          </div>
-				        </div>
-				        <div class="single-portfolio col-sm-2 all technology" style="position: absolute; left: 50%; top: 0px; display: none;">
-				          <div class="item">
-                    <i class="devicon-github-plain colored"></i>
-				            <div class="p-inner">
-				              <h4>Github</h4>
-				              <div class="cat">technology</div>
-				            </div>
-				          </div>
-				        </div>
-                <div class="single-portfolio col-sm-2 all technology" style="position: absolute; left: 66.6667%; top: 0px; display: none;">
-				          <div class="item">
-                    <i class="devicon-jquery-plain colored"></i>
-				            <div class="p-inner">
-				              <h5>jQuery</h5>
-				              <div class="cat">technology</div>
-				            </div>
-				          </div>
-				        </div>
-                <div class="single-portfolio col-sm-2 all technology" style="position: absolute; left: 83.3333%; top: 0px; display: none;">
-				          <div class="item">
-                    <i class="devicon-bootstrap-plain colored"></i>
-				            <div class="p-inner">
-				              <h4>Bootstrap</h4>
-				              <div class="cat">technology</div>
-				            </div>
-				          </div>
-				        </div>
-
-				        <div class="single-portfolio col-sm-2 all technology" style="position: absolute; left: 16.6667%; top: 150px; display: none;">
-				          <div class="item">
-                    <i class="devicon-postgresql-plain colored"></i>
-				            <div class="p-inner">
-				              <h5>PostgreSQL</h5>
-				              <div class="cat">technology</div>
-				            </div>
-				          </div>
-				        </div>
-                <div class="single-portfolio col-sm-2 all technology" style="position: absolute; left: 66.6667%; top: 150px; display: none;">
-				          <div class="item">
-                    <i class="devicon-mongodb-plain colored"></i>
-				            <div class="p-inner">
-				              <h5>MongoDB</h5>
-				              <div class="cat">technology</div>
-				            </div>
-				          </div>
-				        </div>
-                <div class="single-portfolio col-sm-2 all product" style="position: absolute; left: 83.3333%; top: 300px; display: none;">
-                 <div class="item">
-                   <img class="logo" viewbox="0 0 128 128" src="img/logos/jira-logo.png" alt="Work 1">
-                   <div class="p-inner">
-                     <h5>Jira</h5>
-                     <div class="cat">product</div>
-                   </div>
-                 </div>
+              </div>
+              <div class="single-portfolio col-sm-2 all language">
+                <div class="item">
+                  <i class="devicon-html5-plain colored"></i>
+                  <div class="p-inner">
+                    <a>HTML</a>
+                  </div>
                 </div>
-                <div class="single-portfolio col-sm-2 all technology" style="position: absolute; left: 0%; top: 153px; display: none;">
-				          <div class="item">
-                    <i class="devicon-nodejs-plain colored"></i>
-				            <div class="p-inner">
-				              <h5>Node.js</h5>
-				              <div class="cat">technology</div>
-				            </div>
-				          </div>
-				        </div>
-                <div class="single-portfolio col-sm-2 all technology" style="position: absolute; left: 33.3333%; top: 153px; display: none;">
-				          <div class="item">
-                    <i class="devicon-amazonwebservices-original colored"></i>
-				            <div class="p-inner">
-				              <h5>Amazon Web Services</h5>
-				              <div class="cat">technology</div>
-				            </div>
-				          </div>
-				        </div>
-                <div class="single-portfolio col-sm-2 all technology" style="position: absolute; left: 50%; top: 153px; display: none;">
-                 <div class="item">
-                   <i class="devicon-heroku-original colored"></i>
-                   <div class="p-inner">
-                     <h5>Heroku</h5>
-                     <div class="cat">technology</div>
-                   </div>
-                 </div>
-               </div>
-                <div class="single-portfolio col-sm-2 all product" style="position: absolute; left: 66.6667%; top: 303px; display: none;">
-                 <div class="item">
-                   <i class="devicon-trello-plain colored"></i>
-                   <div class="p-inner">
-                     <h5>Trello</h5>
-                     <div class="cat">product</div>
-                   </div>
-                 </div>
-               </div>
-               <div class="single-portfolio col-sm-2 all technology" style="position: absolute; left: 83.3333%; top: 153px; display: none;">
-                 <div class="item">
-                   <i class="devicon-express-original colored"></i>
-                   <div class="p-inner">
-                     <h5>Express</h5>
-                     <div class="cat">technology</div>
-                   </div>
-                 </div>
-               </div>
-				      </div>
-				    </div>
-
-				  </div>
-				</section>
-                    <!--end .row-->
+              </div>
+              <div class="single-portfolio col-sm-2 all language">
+                <div class="item">
+                  <i class="devicon-css3-plain colored"></i>
+                  <div class="p-inner">
+                    <a>CSS</a>
+                  </div>
                 </div>
-                <!--end .container-->
-            </section>
+              </div>
+              <div class="single-portfolio col-sm-2 all technology">
+                <div class="item">
+                  <i class="devicon-react-original colored"></i>
+                  <div class="p-inner">
+                    <a>React</a>
+                  </div>
+                </div>
+              </div>
+              <div class="single-portfolio col-sm-2 all technology">
+                <div class="item">
+                  <i class="devicon-rails-plain colored"></i>
+                  <div class="p-inner">
+                    <a>Rails</a>
+                  </div>
+                </div>
+              </div>
+              <div class="single-portfolio col-sm-2 all technology">
+                <div class="item">
+                  <i class="devicon-git-plain colored"></i>
+                  <div class="p-inner">
+                    <a>Git</a>
+                  </div>
+                </div>
+              </div>
+              <div class="single-portfolio col-sm-2 all technology">
+                <div class="item">
+                  <i class="devicon-github-plain colored"></i>
+                  <div class="p-inner">
+                    <a>Github</a>
+                  </div>
+                </div>
+              </div>
+              <div class="single-portfolio col-sm-2 all technology">
+                <div class="item">
+                  <i class="devicon-jquery-plain colored"></i>
+                  <div class="p-inner">
+                    <a>jQuery</a>
+                  </div>
+                </div>
+              </div>
+              <div class="single-portfolio col-sm-2 all technology">
+                <div class="item">
+                  <i class="devicon-bootstrap-plain colored"></i>
+                  <div class="p-inner">
+                    <a>Bootstrap</a>
+                  </div>
+                </div>
+              </div>
+              <div class="single-portfolio col-sm-2 all technology">
+                <div class="item">
+                  <i class="devicon-sass-original colored"></i>
+                  <div class="p-inner">
+                    <a>Sass</a>
+                  </div>
+                </div>
+              </div>
+              <div class="single-portfolio col-sm-2 all technology">
+                <div class="item">
+                  <i class="devicon-postgresql-plain colored"></i>
+                  <div class="p-inner">
+                    <a>PostgreSQL</a>
+                  </div>
+                </div>
+              </div>
+              <div class="single-portfolio col-sm-2 all technology">
+                <div class="item">
+                  <i class="devicon-mongodb-plain colored"></i>
+                  <div class="p-inner">
+                    <a>MongoDB</a>
+                  </div>
+                </div>
+              </div>
+              <div class="single-portfolio col-sm-2 all technology">
+                <div class="item">
+                  <i class="devicon-nodejs-plain colored"></i>
+                  <div class="p-inner">
+                    <a>Node.js</a>
+                  </div>
+                </div>
+              </div>
+              <div class="single-portfolio col-sm-2 all technology">
+                <div class="item">
+                  <i class="devicon-amazonwebservices-original colored"></i>
+                  <div class="p-inner">
+                    <a>Amazon Web Services</a>
+                  </div>
+                </div>
+              </div>
+              <div class="single-portfolio col-sm-2 all technology">
+               <div class="item">
+                 <i class="devicon-heroku-original colored"></i>
+                 <div class="p-inner">
+                   <a>Heroku</a>
+                 </div>
+               </div>
+             </div>
+              <div class="single-portfolio col-sm-2 all other">
+               <div class="item">
+                 <i class="devicon-trello-plain colored"></i>
+                 <div class="p-inner">
+                   <a>Trello</a>
+                 </div>
+               </div>
+             </div>
+             <div class="single-portfolio col-sm-2 all technology">
+               <div class="item">
+                 <i class="devicon-express-original colored"></i>
+                 <div class="p-inner">
+                   <a>Express</a>
+                 </div>
+               </div>
+             </div>
+             <div class="single-portfolio col-sm-2 all other">
+               <div class="item">
+                 <i class="devicon-photoshop-plain colored"></i>
+                 <div class="p-inner">
+                   <a>Photoshop</a>
+                 </div>
+               </div>
+             </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
 
             <!--Resume
             ============================================================================================================
             -->
-            <section id="resume" class="ts-block">
+
+            <section id="resume" class="ts-block text-white text-center text-sm-left">
                 <div class="container">
-
-                    <div class="ts-title">
-                        <h2>Resume</h2>
-                    </div>
-
                     <div class="row">
-
-                        <div class="col-md-4 mb-5">
-                            <img src="assets/img/img__plant.jpg" class="w-100" alt="">
+                      <div class="col-md-4 mb-5">
+                        <div class="container resume">
+                          <div class="resume-content">
+                            <a href="resume.html" target="_blank">
+                              <div class="content-overlay"></div>
+                              <img class="content-image" src="assets/img/GorshkovaElinaResume.jpeg" alt="Elina Gorshkova Resume">
+                              <div class="content-details fadeIn-bottom">
+                                <h5 class="content-text">Open in a new window</h5>
+                              </div>
+                            </a>
+                          </div>
                         </div>
+                      </div>
 
-                        <div class="col-md-6">
-                            <ul class="list list-text list-dashed">
+                      <div class="col-md-6">
+                          <ul class="list list-text list-dashed">
 
-                                <li data-animate="ts-fadeInRight">
-                                    <h5 class="opacity-30"><strong>2010 - 2013</strong></h5>
-                                    <h4>Scream Interactive</h4>
-                                    <p>
-                                        Fusce pretium dui quis est pretium lobortis. Vestibulum eu ex sed nibh
-                                        condimentum tristique eu finibus lorem. Nullam sed eleifend massa.
-                                    </p>
-                                </li>
-                                <!--end Experience block-->
+                              <li data-animate="ts-fadeInRight">
+                                  <h5 class="opacity-30"><strong>2019 - 2019</strong></h5>
+                                  <h4>General Assembly</h4>
+                                  <p>
+                                    Built rich, full stack apps with the most relevant languages and learned computer science foundations
+                                    <br />
+                                    Mastered such technologies as Express, React, Ruby on Rails and many others
+                                    <br />
+                                    Collaborated effectively with other engineers on group projects
+                                  </p>
+                              </li>
+                              <!--end Experience block-->
 
-                                <li data-animate="ts-fadeInRight" data-ts-delay=".1s">
-                                    <h5 class="opacity-30"><strong>2013 - 2016</strong></h5>
-                                    <h4>Weston PhotoDesign</h4>
-                                    <p>
-                                        Vestibulum eu ex sed nibh condimentum tristique eu finibus lorem. Nullam sed
-                                        eleifend massa. Morbi nulla turpis, pharetra
-                                    </p>
-                                </li>
-                                <!--end Experience block-->
+                              <li data-animate="ts-fadeInRight" data-ts-delay=".1s">
+                                  <h5 class="opacity-30"><strong>2018 - 2019</strong></h5>
+                                  <h4>STATE STREET CORP.</h4>
+                                  <p>
+                                    Tested newly implemented automation algorithms that allowed the company to increase department productivity by over 200%.
+                                    <br />
+                                     Developed a database to keep an accurate record of money movement operations for large corporate clients.
+                                     <br />
+                                     Communicated with the management and the team on weekly basis to provide updates on the project progress
+                                  </p>
+                              </li>
+                              <!--end Experience block-->
 
-                                <li class="mb-0" data-animate="ts-fadeInRight" data-ts-delay=".2s">
-                                    <h5 class="opacity-30"><strong>Until Now</strong></h5>
-                                    <h4>Freelance</h4>
-                                    <p>
-                                        Tristique eu finibus lorem. Nullam sed eleifend massa. Morbi nulla turpis,
-                                        pharetra et nisl eu, pellentesque molestie erat
-                                    </p>
-                                </li>
-                                <!--end Experience block-->
+                              <li class="mb-0" data-animate="ts-fadeInRight" data-ts-delay=".2s">
+                                  <h5 class="opacity-30"><strong>2012 - Present</strong></h5>
+                                  <h4>Photographer</h4>
+                                  <p>
+                                    Utilized Adobe Creative Cloud Suite to perform digital photo editing.
+                                    <br />
+                                    Effectively communicated with numbers of clients to maximize their satisfaction
+                                  </p>
+                              </li>
+                              <!--end Experience block-->
 
-                            </ul>
-                        </div>
+                          </ul>
+                      </div>
 
                     </div>
                 </div>
+
+                <div class="ts-background" data-bg-parallax="scroll" data-bg-parallax-speed="3">
+                    <div class="ts-background-image ts-parallax-element ts-z-index__1"></div>
+                    <div class="ts-img-into-bg ts-background-image ts-parallax-element ts-has-overlay">
+                        <img src="assets/img/bg-gradient.png" alt="warm sunrise">
+                    </div>
+                </div>
+
             </section>
+
+
 
         </main>
         <!--end #content-->
@@ -515,48 +511,31 @@
                 <div class="container">
 
                     <div class="ts-title">
-                        <h2>Contact me</h2>
+                        <h2>Contact Me</h2>
                     </div>
 
-                    <div class="row">
-
-                        <div class="col-md-5">
-                            <p>
-                                In this section I`ll have my contact info
-                            </p>
-                            <a href="#" class="ts-link ts-underline mb-5 mb-md-0 d-inline-block"></a>
+                    <div class="row contacts">
+                      <div class="item col-4">
+                        <i class="far fa-envelope"></i>
+                        <div class="p-inner">
+                          <a class="link" href = "mailto: contact@elinag.dev">contact@elinag.dev</a>
                         </div>
-
-                        <div class="col-sm-6 col-md-4">
-                            <address class="ts-text-muted---white">
-                                Boston, MA
-                                <br>
-                                <br>
-                                <strong>Email:</strong> <a href="#">contact@elinag.dev</a>
-                                <br>
-                            </address>
+                      </div>
+                      <div class="item col-4">
+                        <i class="fab fa-linkedin"></i>
+                        <div class="p-inner">
+                          <a class="link" href="https://www.linkedin.com/in/egorshkova/" target="_blank">LinkedIn</a>
                         </div>
-
-                        <div class="col-sm-6 col-md-3">
-                            <nav class="nav flex-column">
-                                <a class="nav-link" href="#">Home</a>
-                                <a class="nav-link" href="#">About us</a>
-                                <a class="nav-link" href="#">Portfolio</a>
-                                <a class="nav-link" href="#">Services</a>
-                                <a class="nav-link" href="#">Contact</a>
-                            </nav>
+                      </div>
+                      <div class="item col-4">
+                        <i class="fab fa-github-square"></i>
+                        <div class="p-inner">
+                          <a class="link" href="https://github.com/elinagorshkova" target="_blank">GitHub</a>
                         </div>
-
+                      </div>
                     </div>
                 </div>
             </section>
-
-            <section>
-                <div class="container py-5">
-                    <small></small>
-                </div>
-            </section>
-
         </footer>
         <!--end #footer-->
 
@@ -565,5 +544,154 @@
 
 </div>
 
+
+<!--FOOTER
+================================================================================================================
+================================================================================================================
+-->
+<!-- Modal Paper Trade -->
+<div class="modal fade" id="paper-trade-modal" tabindex="-1" role="dialog" aria-labelledby="paper-trade-modal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="project-screenshot">
+          <img class="screenshot" src="assets/img/paper-trade.png" alt="paper trade app screenshot">
+        </div>
+        <div class="project-description">
+          <h5>Paper Trade</h5>
+          <p>Paper Trade is an app designed with a goal to give people chance to learn how to trade stocks with zero risk to lose money. In this app you can buy and sell real world stocks with virtual money.</p>
+          <h5>Some technologies used</h5>
+          <div class="project-tech container">
+            <div class="row">
+              <i class="devicon-react-original-wordmark col-4"></i>
+              <i class="devicon-bootstrap-plain-wordmark col-4"></i>
+              <i class="devicon-rails-plain-wordmark col-4"></i>
+          </div>
+        </div>
+        </div>
+      <div class="m-footer">
+        <div class="project-links contacts row">
+          <div class="project-link item col-6">
+            <a class="link" href="https://elinagorshkova.github.io/paper-trade-client/#/main" target="_blank">Launch project</a>
+          </div>
+          <div class="project-link item col-6">
+            <a class="link" href="https://github.com/elinagorshkova/paper-trade-client" target="_blank">More on GitHub</a>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Paper Trade -->
+
+
+<!-- Modal Tic Tac Toe -->
+<div class="modal fade" id="tic-tac-toe-modal" tabindex="-1" role="dialog" aria-labelledby="tic-tac-toe-modal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="project-screenshot">
+          <img class="screenshot" src="assets/img/tic-tac-toe.png" alt="tic tac toe app screenshot">
+        </div>
+        <div class="project-description">
+          <h5>Tic Tac Toe</h5>
+          <p>Classic game for two players.
+            <br />
+            Vanilla JS front end application with a custom game engine. Also stores the user`s game history and returns win/lose statistics. Works with a pre-built RoR API.</p>
+          <h5>Some technologies used</h5>
+          <div class="project-tech container">
+            <div class="row">
+              <i class="devicon-javascript-plain col-4"></i>
+              <i class="devicon-bootstrap-plain-wordmark col-4"></i>
+              <i class="devicon-sass-original col-4"></i>
+          </div>
+        </div>
+        </div>
+      <div class="m-footer">
+        <div class="project-links contacts row">
+          <div class="project-link item col-6">
+            <a class="link" href="https://elinagorshkova.github.io/tic-tac-toe-client/" target="_blank">Launch project</a>
+          </div>
+          <div class="project-link item col-6">
+            <a class="link" href="https://github.com/elinagorshkova/tic-tac-toe-client" target="_blank">More on GitHub</a>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Tic Tac Toe -->
+
+<!-- Modal uDJ -->
+<div class="modal fade" id="udj-modal" tabindex="-1" role="dialog" aria-labelledby="udj-modal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="project-screenshot">
+          <img class="screenshot" src="assets/img/udj.png" alt="u DJ app screenshot">
+        </div>
+        <div class="project-description">
+          <h5>uDJ</h5>
+          <p>
+            Interactive full stack app that allows a user to play music with a custom library of audio samples. User can pick a library of samples and play music by hitting keys on the keyboard.
+          </p>
+          <h5>Some technologies used</h5>
+          <div class="project-tech container">
+            <div class="row">
+              <i class="devicon-rails-plain-wordmark col-4"></i>
+              <i class="devicon-postgresql-plain-wordmark col-4"></i>
+              <i class="devicon-javascript-plain col-4"></i>
+          </div>
+        </div>
+        </div>
+      <div class="m-footer">
+        <div class="project-links contacts row">
+          <div class="project-link item col-6">
+            <a class="link" href="https://elinagorshkova.github.io/sampler-vol-1.0/" target="_blank">Launch project</a>
+          </div>
+          <div class="project-link item col-6">
+            <a class="link" href="https://github.com/elinagorshkova/sampler-vol-1.0" target="_blank">More on GitHub</a>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal uDJ -->
+
+<!-- Modal YOLO bucket -->
+<div class="modal fade" id="yolo-bucket-modal" tabindex="-1" role="dialog" aria-labelledby="yolo-bucket-modal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="project-screenshot">
+          <img class="screenshot" src="assets/img/yolo-bucket.png" alt="YOLO bucket app screenshot">
+        </div>
+        <div class="project-description">
+          <h5>YOLO bucket</h5>
+          <p>
+            Team project.
+            <br />
+            The main goal og the project was to learn how to work in a team of developers. Learned about projec management technologies such as Trello and methhods such as Scrum.
+          </p>
+          <h5>Some technologies used</h5>
+          <div class="project-tech container">
+            <div class="row">
+              <i class="devicon-express-original-wordmark col-4"></i>
+              <i class="devicon-git-plain-wordmark col-4"></i>
+              <i class="devicon-trello-plain-wordmark col-4"></i>
+          </div>
+        </div>
+        </div>
+      <div class="m-footer">
+        <div class="project-links contacts row">
+          <div class="project-link item col-6">
+            <a class="link" href="https://team-elmn.github.io/yolo-client/" target="_blank">Launch project</a>
+          </div>
+          <div class="project-link item col-6">
+            <a class="link" href="https://github.com/Team-ELMN/yolo-client" target="_blank">More on GitHub</a>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal YOLO bucket -->
 </body>
 </html>
