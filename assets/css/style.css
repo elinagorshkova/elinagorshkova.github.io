@@ -2827,11 +2827,6 @@ h1 a.ts-underline {
 	}
 }
 
-/* #my-skills {
-  display:block;
-      height:700px;
-} */
-
 .item i {
   font-size: 2rem;
 }
@@ -2845,6 +2840,152 @@ h1 a.ts-underline {
     text-align: center;
     cursor: pointer;
     margin-bottom: 20px;
+  }
 /*-------------------------------------------
   -- Isotope
+-------------------------------------------*/
+
+/*-------------------------------------------
+  -- Resume
+-------------------------------------------*/
+.resume, .resume:before, .resume:after{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+}
+
+/* @media screen and (max-width: 640px){
+  .resume{
+    display: block;
+    width: 100%;
+  }
+} */
+
+.resume-content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 71%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.resume-content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+  height: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.resume-content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  bottom: 30%;
+  opacity: 1;
+}
+
+.content-details h5{
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+
+.fadeIn-bottom{
+  bottom: 80%
+}
+/*-------------------------------------------
+  -- Resume
+-------------------------------------------*/
+
+/*-------------------------------------------
+  -- Footer
+-------------------------------------------*/
+.contacts .link {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+.contacts .link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.contacts .link:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/*-------------------------------------------
+  -- Footer
+-------------------------------------------*/
+
+/*-------------------------------------------
+  -- Modal
+-------------------------------------------*/
+.modal-fullscreen{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+
+.modal-content {
+background-color: #111111;
+color: #fff;
+height: 80vh;
+}
+
+.m-header {
+  margin: 10px;
+  text-align: center;
+}
+
+.m-title {
+  display: inline-block;
+}
+
+/*-------------------------------------------
+  -- Modal
 -------------------------------------------*/
