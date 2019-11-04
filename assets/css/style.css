@@ -2454,6 +2454,9 @@ body.has-loading-screen.loading-done #brand-navigation {
       visibility: visible;
         height: 4.5rem;
     }
+    #burger {
+      visibility: hidden;
+    }
 }
 
 #brand-navigation .container {
