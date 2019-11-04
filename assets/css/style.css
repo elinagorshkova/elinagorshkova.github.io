@@ -2436,6 +2436,7 @@ body.has-loading-screen.loading-done #brand-navigation {
 }
 
 #brand-navigation {
+  visibility: hidden;
     position: fixed;
     top: 0;
     transition: -webkit-transform .5s cubic-bezier(.77, 0, .18, 1);
@@ -2450,6 +2451,7 @@ body.has-loading-screen.loading-done #brand-navigation {
 
 @media (max-width: 35.9375rem) {
     #brand-navigation {
+      visibility: visible;
         height: 4.5rem;
     }
 }
